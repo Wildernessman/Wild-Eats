@@ -1,0 +1,87 @@
+/* Badge styling */
+.badge {
+    font-size: 1rem;
+}
+
+.btn-close {
+    font-size: 0.7rem;
+}
+
+#ingredientsList {
+    min-height: 50px;
+}
+
+/* Recipe image styling */
+.recipe-image {
+    width: 100%;
+    max-height: 300px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+}
+
+.alt-recipe-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px 8px 0 0;
+}
+
+/* Side image styling */
+.side-image {
+    max-height: 400px;
+    object-fit: cover;
+    transition: transform 0.3s;
+}
+
+.side-image:hover {
+    transform: scale(1.05);
+}
+
+/* Fun animations */
+.bi-magic {
+    animation: sparkle 2s infinite;
+}
+
+.bi-stars {
+    animation: rotate 3s infinite;
+}
+
+.bi-arrow-right-circle,
+.bi-arrow-left-circle {
+    animation: bounce 2s infinite;
+}
+
+@keyframes sparkle {
+    0% { opacity: 1; }
+    50% { opacity: 0.5; }
+    100% { opacity: 1; }
+}
+
+@keyframes rotate {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+@keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+}
+
+/* Card hover effects */
+.card {
+    transition: transform 0.2s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+/* Button hover effects */
+.btn {
+    transition: all 0.2s;
+}
+
+.btn:hover {
+    transform: scale(1.05);
+}
